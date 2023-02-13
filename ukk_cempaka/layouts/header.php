@@ -20,6 +20,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <?php
+                        <?php var_dump($_SESSION); ?> 
                         if ($_SESSION['login'] == 'admin') { ?>
                             <a class="nav-link" href="index.php?page=pengaduan">Data Pengaduan</a>
                         <?php } elseif ($_SESSION['login'] == 'petugas') { ?>
